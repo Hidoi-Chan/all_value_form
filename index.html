@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main">
+        <h1 id="title">Свяжитесь с нами</h1>
+        <p id="description">Персональные данные обрабатываются в соответствии с ФЗ «О персональных данных» № 152-ФЗ.</p>
+        <form id="survey-form" action="#" method="post" name="form">
+            <label id="name-label" for="name">Введите имя</label>
+            <input id="name" type="text" name="name" placeholder="Имя" required>
+            <label id="email-label" for="email">Введите E-Mail</label>
+            <input id="email" type="email" name="email" placeholder="Электронная почта" required>
+            <label id="number-label" for="number">Введите возраст</label>
+            <input id="number" type="number" name="number" min="18" max="99" placeholder="Возраст" required>
+            <select name="dropdown" id="dropdown" required>
+                <option value="delivery">Доставка</option>
+                <option value="pickup">Самовывоз</option>
+            </select>
+            <p>Выберите способ оплаты:</p>
+            <label><input type="radio" name="payment_method" value="cash">Наличный расчет</label>
+            <label><input type="radio" name="payment_method" value="prepayment">Предоплата на сайте</label>
+            <p>Связаться для подтверждения заказа</p>
+            <label><input type="checkbox" name="confirm" value="phone_confirm">Подтвердить по телефону</label>
+            <label><input type="checkbox" name="confirm" value="email_confirm">Направить всю информацию на
+                электронную почту</label>
+            <label><input type="checkbox" name="confirm" value="none_confirm">Не беспокоить</label>
+            <textarea type="text" name="comment" rows="6"></textarea>
+            <button id="submit" type="submit">Отправить</button>
+        </form>
+    </main>
+</body>
+
+</html>
